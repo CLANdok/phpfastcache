@@ -163,7 +163,7 @@ class Driver extends DriverAbstract
         $stats = (array) $this->instance->getstats();
         $stats[ 'uptime' ] = (isset($stats[ 'uptime' ]) ? $stats[ 'uptime' ] : 0);
         $stats[ 'version' ] = (isset($stats[ 'version' ]) ? $stats[ 'version' ] : 'UnknownVersion');
-        $stats[ 'bytes' ] = (isset($stats[ 'bytes' ]) ? $stats[ 'version' ] : 0);
+        $stats[ 'bytes' ] = (isset($stats[ 'bytes' ]) ? $stats[ 'bytes' ] : 0);
         
         $date = (new \DateTime())->setTimestamp(time() - $stats[ 'uptime' ]);
 
